@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap"
+      rel="stylesheet"
+    />
+    <title>Secant Method</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="doc">
+      <!-- navbar -->
+      <div class="navbar">
+        <div class="nav-logo">
+          <p id="logo">Secant Method</p>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="index.html">Calculator</a></li>
+            <li><a href="About_Us.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- navbar end -->
+      <!-- Heading Section -->
+      <div class="theory">
+        <h1>Secant Method Calculator</h1>
+      </div>
+      <!-- Heading Section End -->
+      <!-- Calculator -->
+      <div class="calculatorBody">
+        <div class="calculator">
+          <div class="calc-form">
+            <form action="/action" id="secantForm">
+              <div class="input-group">
+                <input type="text" id="function" required />
+                <label for="function">Function</label>
+              </div>
+              <div class="input-group">
+                <input type="number" id="x0" step="any" required />
+                <label for="value">Initial Value x0</label>
+              </div>
+              <div class="input-group">
+                <input type="number" id="x1" step="any" required />
+                <label for="value">Initial Value x1</label>
+              </div>
+              <div class="input-group">
+                <input type="number" id="decPoint" max="10" required />
+                <label for="point">Set Decimal Point</label>
+              </div>
+              <div class="button">
+                <button id="btn">Calculate</button>
+              </div>
+            </form>
+          </div>
+          <!-- form end -->
+          <div class="calc-table">
+            <!-- Table Start -->
+            <table id="resultsTable">
+              <caption>
+                𝙸𝚝𝚎𝚛𝚊𝚝𝚒𝚘𝚗 𝚃𝚊𝚋𝚕𝚎
+              </caption>
+              <thead>
+                <tr>
+                  <th>Iteration</th>
+                  <th>x0</th>
+                  <th>x1</th>
+                  <th>x</th>
+                  <th>F(x)</th>
+                  <th>Error</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <div id="result"></div>
+          </div>
+          <!-- Table End -->
+        </div>
+      </div>
+      <!-- Calculator End -->
+      <div class="footer">
+        <p>© 2024 Secant Method Calculator | Team SAD</p>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="./code.js"></script>
+  </body>
+</html>

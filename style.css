@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+#doc {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  position: relative;
+}
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo,
+.nav-list {
+  width: 30%;
+  height: 60px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#logo {
+  color: #cccccc;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Spicy Rice", serif;
+}
+.nav-list {
+  justify-content: end;
+}
+ul {
+  display: flex;
+}
+
+a {
+  padding-right: 20px;
+  color: #cccccc;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #f3ebeb;
+}
+
+.theory {
+  text-align: center;
+  margin-top: 15px;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.calculatorBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: auto;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.842);
+  border-radius: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.calc-form {
+  width: 330px;
+  height: 95%;
+  border-radius: 10px;
+  padding: 0px 10px;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.calc-table {
+  width: auto;
+  height: 95%;
+  margin-left: 25px;
+  overflow-y: auto;
+}
+.calc-table::-webkit-scrollbar {
+  display: none;
+}
+
+/* input style */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-group {
+  position: relative;
+  margin: 15px 0;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: gray;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-group input {
+  width: 310px;
+  height: 60px;
+  font-size: 16px;
+  color: #141414;
+  padding: 0 15px;
+  background: transparent;
+  border: 1.2px solid gray;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: 0;
+  font-size: 14px;
+  background: #ececec;
+}
+/* style end */
+
+.button button {
+  width: 310px;
+  height: 40px;
+  background-color: #141414;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #ececec;
+  margin-top: 50px;
+}
+
+table {
+  width: auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  text-align: left;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+caption {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+
+th,
+td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+  color: #8c8c8c;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+td {
+  color: #333333;
+}
+
+.meetTheTeam {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 400;
+}
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+  padding: 0px 30px;
+  display: flex;
+  justify-content: center;
+}
+.member {
+  width: 250px;
+  height: 360px;
+  background-color: rgba(255, 255, 255, 0.842);
+  padding: 15px 5px 0px 5px;
+  margin-left: 50px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 3px 3px 12px rgb(186, 181, 181);
+}
+.member img {
+  width: 160px;
+  height: 160px;
+  border: 3.5px solid rgb(104, 99, 95);
+  border-radius: 50%;
+  padding-top: 10px;
+}
+.mName {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 34px;
+  width: auto;
+  height: 50px;
+  background-color: black;
+  color: #cccccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.afooter {
+  margin-top: 89px;
+  height: 50px;
+}
+
+#result {
+  font-weight: 500;
+}

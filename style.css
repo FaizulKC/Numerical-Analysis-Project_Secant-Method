@@ -14,6 +14,8 @@
   height: 100vh;
   background-color: #cccccc;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar {
@@ -149,6 +151,14 @@ input::-webkit-inner-spin-button {
   font-size: 14px;
   background: #ececec;
 }
+
+.input-group input::placeholder{
+  color: transparent;
+}
+.input-group input:focus::placeholder{
+  color: gray;
+  transition: 0.8s;
+}
 /* style end */
 
 .button button {
@@ -241,7 +251,8 @@ h2 {
 }
 
 .footer {
-  margin-top: 34px;
+  margin-top: auto;
+  margin-bottom: 0;
   width: auto;
   height: 50px;
   background-color: black;
@@ -251,7 +262,9 @@ h2 {
   align-items: center;
 }
 .afooter {
-  margin-top: 89px;
+  /* margin-top: 89px; */
+  margin-top: auto;
+  margin-bottom: 0;
   height: 50px;
 }
 
